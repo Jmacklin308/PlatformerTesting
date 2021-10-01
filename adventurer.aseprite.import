@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite_animation_importer"
+type="SpriteFrames"
+path="res://.import/adventurer.aseprite-6acca0406e86a28eed804a06eb7048f9.res"
+
+[deps]
+
+source_file="res://adventurer.aseprite"
+dest_files=[ "res://.import/adventurer.aseprite-6acca0406e86a28eed804a06eb7048f9.res" ]
+
+[params]
+
+extrude=false
+default_direction="Forward"
+default_loop=false

@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://adventurer.aseprite" type="SpriteFrames" id=1]
+[ext_resource path="res://scripts/Player.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 5.79036, 13.2863 )
+
+[node name="Player" type="KinematicBody2D"]
+position = Vector2( 6.17992, 17.0424 )
+collision_layer = 3
+collision_mask = 0
+collision/safe_margin = 23.333
+motion/sync_to_physics = true
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = ExtResource( 1 )
+animation = "idle"
+frame = 3
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.264847, 4.37029 )
+shape = SubResource( 1 )
